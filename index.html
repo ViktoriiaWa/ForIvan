@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.4/css/uikit.min.css" />
+</head>
+<body>
+    <nav class="uk-navbar-container" uk-navbar>
+        <div class="uk-navbar-left">
+            <!-- Логотип -->
+            <a class="uk-navbar-item uk-logo" href="#">Логотип</a>
+        </div>
+        
+        <div class="uk-navbar-center">
+            <!-- Пункты меню -->
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="#">Меню 1</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a href="#">Пункт 1</a></li>
+                            <li><a href="#">Пункт 2</a></li>
+                            <li><a href="#">Пункт 3</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Меню 2</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a href="#">Пункт 4</a></li>
+                            <li><a href="#">Пункт 5</a></li>
+                            <li><a href="#">Пункт 6</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Меню 3</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a href="#">Пункт 7</a></li>
+                            <li><a href="#">Пункт 8 <span class="uk-label uk-label-danger">new</span></a></li>
+                            <li><a href="#">Пункт 9</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right">
+          <!-- Блок с иконкой и именем пользователя -->
+          <div class="uk-navbar-item uk-visible@m">
+              <a class="uk-button uk-button-default uk-button-small" href="#">
+                  <span class="uk-margin-small-right" uk-icon="icon: user"></span> <!-- Иконка пользователя -->
+                  Имя пользователя
+              </a>
+              <div uk-dropdown="mode: click; pos: bottom-right;">
+                  <ul class="uk-nav uk-dropdown-nav">
+                      <li><a href="#">Пункт 1</a></li>
+                      <li><a href="#">Пункт 2</a></li>
+                      <li><a href="#">Пункт 3</a></li>
+                      <li class="uk-nav-divider"></li>
+                      <li><a href="#">Выйти</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>      
+        </nav>
+        
+        <div class="uk-container">
+            <!-- Средняя часть страницы для контента -->
+            <div class="uk-section">
+                <h1>Добро пожаловать на главную страницу!</h1>
+            </div>
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.4/js/uikit.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.4/js/uikit-icons.min.js"></script>
+      </body>
+      </html>
